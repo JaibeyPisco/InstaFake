@@ -31,7 +31,7 @@ const Login = () => {
 
     return (
         <div className="auth_page">
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="login-size">
                 <h3 className="text-uppercase text-center mb-4">
                     <img src={logo} style={{ width:250, height:80}}/>
                 </h3>
@@ -62,13 +62,13 @@ const Login = () => {
                    
                 </div>
                 
-                <button type="submit" className="btn btn-dark w-100"
+                <button  type="submit" className="btn custom-login w-100"
                 disabled={email && password ? false : true}>
                     Login
                 </button>
 
                 <p className="my-2">
-                    You don't have an account? <Link to="/register" style={{color: "crimson"}}>Register Now</Link>
+                    You don't have an account? <Link to="/register" style={{color: "#0285ff"}}>Register Now</Link>
                 </p>
             </form>
         </div>
